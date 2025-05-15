@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NHL Play-off Bracket Editor</title>
+    <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
-    
+    <div class="main-container">
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-link">Back</a>
+                <button id="save-bracket" class="nav-button">Save Bracket</button>
+                <button id="reset-bracket" class="nav-button">Reset</button>
+            </nav>
+        </header>
+
+        <div class="content-container">
+            <div class="teams-container" id="teams-column">
+                <h2>Available Teams</h2>
+                <div class="teams-list" id="available-teams"></div>
+            </div>
+
+            <div class="bracket-container">
+                <div class="round" id="first-round">
+                    <h3>First Round</h3>
+                    <div class="matchups" id="first-round-matchups"></div>
+                </div>
+                <div class="round" id="second-round">
+                    <h3>Second Round</h3>
+                    <div class="matchups" id="second-round-matchups"></div>
+                </div>
+                <div class="round" id="conference-finals">
+                    <h3>Conference Finals</h3>
+                    <div class="matchups" id="conference-round-matchups"></div>
+                </div>
+                <div class="round" id="stanley-cup-final">
+                    <h3>Stanley Cup Final</h3>
+                    <div class="matchups" id="final-round-matchups"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>2025 NHL Playoffs Bracket Editor</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
